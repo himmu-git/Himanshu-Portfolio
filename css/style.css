@@ -1,0 +1,96 @@
+@import "./variable.css"; /* Using a string */
+
+* {
+    box-sizing: border-box;
+    margin:  0;
+    padding  : 0;
+    color : var(--slate);    
+}
+
+body{
+    font-family: var(--font-sans);
+    /* width: 100%; */
+    /* height: 100%; */
+    min-height: 100vh;
+    background-color: var(--navy);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+/* Loader */
+#loader{
+    min-height: 100vh;
+    min-width: 100%;
+    /* background-color: var(--navy); */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    animation: gradient 15s ease infinite;
+}
+.loader{
+    height: 2.5rem;
+    display: flex;
+    gap : 0.2rem;
+    z-index: 1000;
+}
+.circle{
+    background-color: var(--green);
+    height: 0rem;
+    width: 0rem;
+    border-radius: 50%;
+    animation : bounce 1s infinite alternate;
+
+}
+.circle:nth-child(2){
+    background-color: var(--blue);
+    animation-delay: 0.3s;
+
+}
+.circle:nth-child(3){
+    background-color: var(--pink);
+    animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+    to {
+        width: 2rem;
+        height: 2rem;
+        transform: translate3d(0,-2rem,0);
+    }
+  
+    
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.show{
+    opacity: 1;
+    transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -webkit-transition: opacity 2s ease-in;
+    display: flex !important;
+}
+.hide{
+    opacity: 0;
+    display: none !important;
+}
+.main {
+    transition: opacity 2s ease-in;
+}
+/* Loader ends */
+
