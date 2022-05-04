@@ -23,11 +23,13 @@
         <header>
             <nav>
                 <ul class="navbar addn">
-                    <li class="logo_icon"><a href="" class="navbar__links"><span class="navbar__logo" style="">&ltH/&gt</span></a></li>
-                    <li><a href="" class="navbar__links display__none"> <span class="navbar__numbering">01.</span> About</a></li>
-                    <li><a href="" class="navbar__links display__none"><span class="navbar__numbering">02.</span>Experience</a></li>
-                    <li><a href="" class="navbar__links display__none"><span class="navbar__numbering">03.</span>Work</a></li>
-                    <li><a href="" class="navbar__links display__none"><span class="navbar__numbering">04.</span>Contact</a></li>
+                    <li class="logo__icon"><a href="#hero__section" class="navbar__links"><span class="navbar__logo" style="">&ltH/&gt</span></a></li>
+                    <li><a href="#about" class="navbar__links display__none"> <span class="navbar__numbering">01.</span> About</a>
+                    </li>
+                    <li><a href="#experience" class="navbar__links display__none"><span class="navbar__numbering">02.</span>Experience</a>
+                    </li>
+                    <li><a href="#work" class="navbar__links display__none"><span class="navbar__numbering">03.</span>Work</a></li>
+                    <li><a href="#contact" class="navbar__links display__none"><span class="navbar__numbering">04.</span>Contact</a></li>
                     <li><a href="" class="navbar__links navbar__resume display__none">Resume</a></li>
                     <li class="menu">
                         <div class="menu__icon">
@@ -37,12 +39,12 @@
                 </ul>
             </nav>
         </header>
-        <div class="left">
+        <div id="left-sidebar" class="left">
             <ul class="styled__list">
                 <!-- TODO : Remove this class  -->
                 <li class="styled__list_left">
                     <a href="https://github.com/himmu-git" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img"
+                        <svg class="side__icons" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" width="24"
                             height="24">
@@ -55,7 +57,7 @@
                 </li>
                 <li class="styled__list_left">
                     <a href="https://www.linkedin.com/in/himanshu51/" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img"
+                        <svg class="side__icons" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin" width="24"
                             height="24">
@@ -70,7 +72,7 @@
                 </li>
                 <li class="styled__list_left">
                     <a href="https://twitter.com/yadavhimanshu51" target="_blank" rel="noopener noreferrer">
-                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img"
+                        <svg class="side__icons" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter" width="24"
                             height="24">
@@ -83,16 +85,16 @@
                 </li>
                 <li class="styled__list_left">
                     <a href="https://www.instagram.com/himmu_51/" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/img/Instagram.svg" alt="Instagram">
+                        <img class="side__icons" src="./assets/img/Instagram.svg" alt="Instagram">
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="right">
+        <div id="right-sidebar" class="right">
             <a class="right-text" href="mailto:yadavhimanshu51@gmail.com"> <span
-                    class="orentation">yadavhimanshu51@gmail.com</span></a>
+                    class="orentation side__icons">yadavhimanshu51@gmail.com</span></a>
         </div>
-        <section class="hero__section">
+        <section id="hero__section" class="hero__section">
             <div class="hero__section__text">
                 <h1>
                     Hi, my name is
@@ -101,85 +103,150 @@
                     Himanshu
                 </h2>
                 <h3 class="big__heading">
-                    I'm Software Developer at <span>Jugnoo</span>
+                    I loves to build <span class="green__color">Web apps</span>
                 </h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis delectus corporis perspiciatis
-                    consectetur officiis dignissimos nostrum culpa molestiae itaque. Illum neque blanditiis aperiam
-                    deserunt voluptate, exercitationem voluptatibus iusto a numquam quia. Rerum quidem nam cumque
-                    repudiandae inventore dignissimos, dolore, ea nulla eum repellendus ad reprehenderit.
+                <p class="p-2 w-75__text__decoration">
+                    I'm a software engineer at <span class="green__color">Jugnoo</span>. I've completed my Bachelor of Technology
+                    (BTech) from <span class="green__color">IIIT-D</span> in
+                    Electronics and Commnucation Engineering. Currently I'm working on frontend technologies such as Angular 8,
+                    AngularJs, exploring ReactJs & NextJs. I'm Open to learning opportunity.
                 </p>
             </div>
             <!-- <div>
                 <img class="profile-image" src="./assets/img/prefill.jpeg" alt="">
             </div> -->
         </section>
-        <section class="hero__section">
-            <div class="hero__section__text">
-                <h1>
-                    Hi, my name is
-                </h1>
-                <h2 class="big__heading">
-                    Himanshu
-                </h2>
-                <h3 class="big__heading">
-                    I'm Software Developer at <span>Jugnoo</span>
-                </h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis delectus corporis perspiciatis
-                    consectetur officiis dignissimos nostrum culpa molestiae itaque. Illum neque blanditiis aperiam
-                    deserunt voluptate, exercitationem voluptatibus iusto a numquam quia. Rerum quidem nam cumque
-                    repudiandae inventore dignissimos, dolore, ea nulla eum repellendus ad reprehenderit.
-                </p>
+        <section id="about" class="about__section">
+            <div class="about__heading">
+                <h5 class="">
+                    <span class="numbered">01.</span>
+                    <span class="number__heading"> <label for="">About Me</label></span>
+                    <!-- <span class="hoz__line"></span> -->
+                </h5>
+                <div class="about__me">
+                    <div class="about__me__info">
+                        <p>
+                            Hello! My name is Himanshu and I enjoy creating things that live on the internet. My interest in web development started
+                            back in 2021 When I joined Jugnoo as Frontend Developer. When I create webpages I lost track of time and enjoy company with javascript 😉.
+                        </p>
+        
+                        <p>
+                            I love converting wireframes to webpages with phenomenal UI & UX.
+                        </p>
+                        <ul class="skills-list">
+                            <li>
+                                JavaScript (ES6+)
+                            </li>
+                            <li>
+                                Angular 8+
+                            </li>
+                            <li>
+                                AngularJs
+                            </li>
+                            <li>
+                                ReactJs
+                            </li>
+                            <li>
+                                TypeScript
+                            </li>
+                            <li>
+                                C++
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about__img">
+                        <img  src="./assets/img/newpic.png" alt="Picture">
+                        <div class="something">
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- <div>
-                <img class="profile-image" src="./assets/img/prefill.jpeg" alt="">
-            </div> -->
+                        <img class="profile-image" src="./assets/img/prefill.jpeg" alt="">
+                    </div> -->
         </section>
-        <section class="hero__section">
-            <div class="hero__section__text">
-                <h1>
-                    Hi, my name is
-                </h1>
-                <h2 class="big__heading">
-                    Himanshu
-                </h2>
-                <h3 class="big__heading">
-                    I'm Software Developer at <span>Jugnoo</span>
-                </h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis delectus corporis perspiciatis
-                    consectetur officiis dignissimos nostrum culpa molestiae itaque. Illum neque blanditiis aperiam
-                    deserunt voluptate, exercitationem voluptatibus iusto a numquam quia. Rerum quidem nam cumque
-                    repudiandae inventore dignissimos, dolore, ea nulla eum repellendus ad reprehenderit.
-                </p>
+        <section id="experience" class="about__section">
+            <div class="about__heading">
+                <h5 class="">
+                    <span class="numbered">02.</span>
+                    <span class="number__heading"> <label for="">Experience</label></span>
+                    <!-- <span class="hoz__line"></span> -->
+                </h5>
+                <div class="about__me">
+                    <div class="about__me__info">
+                        <p>
+                            Hello! My name is Himanshu and I enjoy creating things that live on the internet. My interest in web
+                            development started
+                            back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom
+                            reblog button
+                            taught me a lot about HTML & CSS!
+                        </p>
+                    </div>
+                    <!-- <div class="about__img">
+                        <img src="./assets/img/newpic.png" alt="Picture">
+                        <div class="something">
+            
+                        </div>
+                    </div> -->
+                </div>
             </div>
-            <!-- <div>
-                <img class="profile-image" src="./assets/img/prefill.jpeg" alt="">
-            </div> -->
         </section>
-        <section class="hero__section">
-            <div class="hero__section__text">
-                <h1>
-                    Hi, my name is
-                </h1>
-                <h2 class="big__heading">
-                    Himanshu
-                </h2>
-                <h3 class="big__heading">
-                    I'm Software Developer at <span>Jugnoo</span>
-                </h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis delectus corporis perspiciatis
-                    consectetur officiis dignissimos nostrum culpa molestiae itaque. Illum neque blanditiis aperiam
-                    deserunt voluptate, exercitationem voluptatibus iusto a numquam quia. Rerum quidem nam cumque
-                    repudiandae inventore dignissimos, dolore, ea nulla eum repellendus ad reprehenderit.
-                </p>
+        <section id="work" class="about__section">
+            <div class="about__heading">
+                <h5 class="">
+                    <span class="numbered">03.</span>
+                    <span class="number__heading"> <label for="">Work</label></span>
+                    <!-- <span class="hoz__line"></span> -->
+                </h5>
+                <div class="about__me">
+                    <div class="about__me__info">
+                        <p>
+                            Hello! My name is Himanshu and I enjoy creating things that live on the internet. My interest in web
+                            development started
+                            back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom
+                            reblog button
+                            taught me a lot about HTML & CSS!
+                        </p>
+                    </div>
+                    <!-- <div class="about__img">
+                        <img src="./assets/img/newpic.png" alt="Picture">
+                        <div class="something">
+            
+                        </div>
+                    </div> -->
+                </div>
             </div>
-            <!-- <div>
-                <img class="profile-image" src="./assets/img/prefill.jpeg" alt="">
-            </div> -->
+        </section>        
+        <section id="contact" class="about__section">
+            <div class="about__heading">
+                <h5 class="">
+                    <span class="numbered">04.</span>
+                    <span class="number__heading"> <label for="">Contact</label></span>
+                    <!-- <span class="hoz__line"></span> -->
+                </h5>
+                <div class="about__me">
+                    <div class="about__me__info">
+                        <p>
+                            Hello! My name is Himanshu and I enjoy creating things that live on the internet. My interest in web
+                            development started
+                            back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom
+                            reblog button
+                            taught me a lot about HTML & CSS!
+                        </p>
+                    </div>
+                    <!-- <div class="about__img">
+                        <img src="./assets/img/newpic.png" alt="Picture">
+                        <div class="something">
+            
+                        </div>
+                    </div> -->
+                </div>
+            </div>
         </section>
+        <footer>
+
+        </footer>
     </div>
 
 

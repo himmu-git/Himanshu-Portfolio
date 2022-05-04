@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "SF Mono";
+  src: url(../assets/font/FontsFree-Net-SFMono-Regular.ttf) format("truetype");
+}
 :root {
     --dark-navy: #020c1b;
     --navy: #0a192f;
