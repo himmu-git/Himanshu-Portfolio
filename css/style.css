@@ -532,6 +532,10 @@ body.blur #content > * {
         display: none;
 
     }
+    .second__project{
+        display: flex; 
+        flex-direction: row-reverse;
+    }
 
 
 
@@ -659,6 +663,20 @@ body.blur #content > * {
     .sidebar__numbering{
         color: var(--green);
     }
+    .project__description{
+        top: 0;
+        right : 0;
+        width :100%;
+    }
+    .list__stack{
+        display: flex;
+        max-width: 100vw;
+
+    }
+    .position__project{
+    position: relative;
+    left: 0;
+}
     
     }
     @media (max-width : 520px) {
@@ -678,10 +696,3 @@ body.blur #content > * {
         }
 
     }
- 
-    /* .display__block {
-
-    }
-    .menu {
-        display: none;
-    } */
