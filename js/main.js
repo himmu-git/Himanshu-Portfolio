@@ -1,6 +1,11 @@
 // select loader hear 
 const loader = document.querySelector('#loader');
 const main = document.querySelector('.main')
+const sidebarMenu = document.querySelector('.sidebar__menu')
+const hamburgerIcon = document.getElementById('hamburger');
+const sidebarDisplay = document.getElementById('sidebar');
+const closeBtn = document.getElementById('close-menu');
+console.log(hamburgerIcon)
 //Hide Loader 
 function init() {
     setTimeout(() => {
@@ -14,4 +19,14 @@ function init() {
     }, 2000)
 }
 init();
+hamburgerIcon.addEventListener('click', (event) => {
+    sidebarDisplay.style.display = "flex";
+    sidebarMenu.style.display = "flex"
+})
+closeBtn.addEventListener('click', (event) => {
+    sidebarDisplay.style.display = "none";
+    sidebarMenu.style.display = "none"
+})
+function sidebarDisplayfn() {
 
+}
