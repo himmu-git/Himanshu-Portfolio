@@ -40,6 +40,3 @@ closeBtn.addEventListener('click', (event) => {
         }, 750)
     })
 })
-function sidebarDisplayfn() {
-
-}
