@@ -6,7 +6,6 @@ const hamburgerIcon = document.getElementById('hamburger');
 const sidebarDisplay = document.getElementById('sidebar');
 const closeBtn = document.getElementById('close-menu');
 const blurClass = document.querySelectorAll('.blur-class');
-console.log(blurClass)
 //Hide Loader 
 function init() {
     setTimeout(() => {
@@ -40,3 +39,53 @@ closeBtn.addEventListener('click', (event) => {
         }, 750)
     })
 })
+
+const wordToShow = ["I love to build Web apps", "I'm a Software Engineer", "I'm a Hobbyist Photographer"]
+const dynamicHeading = document.getElementById("dynamic-text");
+
+
+
+function deleteChars(deletingSpeed) {
+    console.log(dynamicHeading)
+    const htmlText = dynamicHeading.innerHTML
+}
+deleteChars()
+
+const words = ["I love to build Web Apps", "I'm a Software Engineer", "I'm a Hobbyist Photographer"]
+let i = 0;
+let counter;
+function typeNow() {
+    let word = words[i].split("");
+    var loopTyping = function () {
+        if (word.length > 0) {
+            document.getElementById('dynamic-text').innerHTML += word.shift();
+
+        } else {
+            deleteNow();
+            return false;
+        };
+        counter = setTimeout(loopTyping, 200);
+    };
+    loopTyping();
+};
+function deleteNow() {
+    let word = words[i].split("");
+    var loopDeleting = function () {
+        if (word.length > 0) {
+            word.pop();
+            document.getElementById('dynamic-text').innerHTML = word.join("");
+        } else {
+            if (words.length > (i + 1)) {
+                i++;
+            }
+            else {
+                i = 0;
+            };
+            typeNow();
+            return false;
+        };
+        counter = setTimeout(loopDeleting, 100);
+    };
+    loopDeleting();
+};
+typeNow();

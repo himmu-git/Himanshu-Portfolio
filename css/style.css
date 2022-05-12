@@ -511,6 +511,17 @@ html{
 .say__hello:hover{
     background-color: var(--green-tint);
 }
+.blink{
+}
+.blink::after{
+    content: "|";
+    display: inline-block;
+    animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 .mobile__footer{
     display: none;
     /* padding: 0 20rem; */
@@ -518,12 +529,6 @@ html{
     justify-content: space-evenly;
 }
 
-body.blur #content > * {
-    filter: blur(5px) brightness(0.7);
-    transition: var(--transition);
-    pointer-events: none;
-    user-select: none;
-}
 
     .sidebar__mobile{
         display: none;
