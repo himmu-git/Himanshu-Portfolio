@@ -40,16 +40,6 @@ closeBtn.addEventListener('click', (event) => {
     })
 })
 
-const wordToShow = ["I love to build Web apps", "I'm a Software Engineer", "I'm a Hobbyist Photographer"]
-const dynamicHeading = document.getElementById("dynamic-text");
-
-
-
-function deleteChars(deletingSpeed) {
-    console.log(dynamicHeading)
-    const htmlText = dynamicHeading.innerHTML
-}
-deleteChars()
 
 const words = ["I love to build Web Apps", "I'm a Software Engineer", "I'm a Hobbyist Photographer"]
 let i = 0;
