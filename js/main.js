@@ -6,6 +6,11 @@ const hamburgerIcon = document.getElementById('hamburger');
 const sidebarDisplay = document.getElementById('sidebar');
 const closeBtn = document.getElementById('close-menu');
 const blurClass = document.querySelectorAll('.blur-class');
+const experienceSection = document.getElementById('experience');
+const jugnooDetails = document.getElementById('jugnoo-details');
+const infoedgeDetails = document.getElementById('infoedge-details');
+const jugnoo = document.getElementById('jugnoo');
+const infoedge = document.getElementById('infoedge');
 //Hide Loader 
 function init() {
     setTimeout(() => {
@@ -40,6 +45,22 @@ closeBtn.addEventListener('click', (event) => {
     })
 })
 
+experienceSection.addEventListener('click', (event) => {
+    console.log(event)
+
+    if (event.target.id == 'jugnoo') {
+        jugnoo.classList.add('active')
+        infoedge.classList.remove('active')
+        jugnooDetails.style.display = 'block';
+        infoedgeDetails.style.display = 'none';
+    }
+    else if (event.target.id == 'infoedge') {
+        jugnoo.classList.remove('active')
+        infoedge.classList.add('active')
+        infoedgeDetails.style.display = 'block';
+        jugnooDetails.style.display = 'none';
+    }
+})
 
 const words = ["I love to build Web Apps", "I'm a Software Engineer", "I'm a Hobbyist Photographer"]
 let i = 0;

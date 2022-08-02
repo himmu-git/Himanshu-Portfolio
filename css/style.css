@@ -373,20 +373,33 @@ html{
     line-height: 12px;
 }
 .sidebar__exp{
+    display: inline-block;
     /* height: 300px; */
-    /* width: 120px; */
     margin: 1.4rem;
     border-left: solid 2px var(--light-navy);
+}
+.sidebar__exp > div {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top : 0px;
+    height: 55px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    padding: 0.85rem 1rem;
+    cursor : pointer;
 }
 .active {
     position: relative;
     top : 0px;
-    height: 45px;
+    height: 55px;
     border-left: solid 3px var(--green);
     font-family: var(--font-mono);
     font-size: 0.85rem;
     color: var(--green);
-    padding: 0.8rem 1rem;
+    padding: 0.85rem 1rem;
     cursor : pointer;
 }
 .sidebar__exp :hover{
