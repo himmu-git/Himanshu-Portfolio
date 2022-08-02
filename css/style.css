@@ -729,6 +729,10 @@ html{
             border-top: solid 3px var(--green);
             border-left: none;
         }
+        .details {
+            padding: 0 1rem;
+            margin: 0;
+        }
         .about__me{
         flex-direction: column;
         }
