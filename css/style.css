@@ -723,7 +723,11 @@ html{
     }
     @media (max-width : 520px) {
         .sidebar__exp{
-            display: none;
+            display: flex;
+        }
+        .active {
+            border-top: solid 3px var(--green);
+            border-left: none;
         }
         .about__me{
         flex-direction: column;
