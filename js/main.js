@@ -21,7 +21,7 @@ function init() {
 
         main.style.display = 'block';
         setTimeout(()=>(main.style.opacity = 1),50)
-    }, 2000)
+    }, 1500)
 }
 init();
 hamburgerIcon.addEventListener('click', (event) => {
