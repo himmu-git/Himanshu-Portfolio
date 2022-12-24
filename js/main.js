@@ -11,6 +11,7 @@ const jugnooDetails = document.getElementById('jugnoo-details');
 const infoedgeDetails = document.getElementById('infoedge-details');
 const jugnoo = document.getElementById('jugnoo');
 const infoedge = document.getElementById('infoedge');
+const slider = document.querySelector('.slider');
 //Hide Loader 
 function init() {
     setTimeout(() => {
@@ -49,14 +50,14 @@ experienceSection.addEventListener('click', (event) => {
     console.log(event)
 
     if (event.target.id == 'jugnoo') {
-        jugnoo.classList.add('active')
-        infoedge.classList.remove('active')
+        slider.classList.add('move__bottom')
+        // infoedge.classList.remove('active')
         jugnooDetails.style.display = 'block';
         infoedgeDetails.style.display = 'none';
     }
     else if (event.target.id == 'infoedge') {
-        jugnoo.classList.remove('active')
-        infoedge.classList.add('active')
+        slider.classList.remove('move__bottom')
+        // infoedge.classList.add('active')
         infoedgeDetails.style.display = 'block';
         jugnooDetails.style.display = 'none';
     }

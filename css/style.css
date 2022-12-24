@@ -377,6 +377,7 @@ html{
     /* height: 300px; */
     margin: 1.4rem;
     border-left: solid 2px var(--light-navy);
+    position: relative;
 }
 .sidebar__exp > div {
     width: 150px;
@@ -390,9 +391,10 @@ html{
     font-size: 0.85rem;
     padding: 0.85rem 1rem;
     cursor : pointer;
+    /* position: relative; */
 }
-.active {
-    position: relative;
+.slider {
+    position: absolute;
     top : 0px;
     height: 55px;
     border-left: solid 3px var(--green);
@@ -401,6 +403,12 @@ html{
     color: var(--green);
     padding: 0.85rem 1rem;
     cursor : pointer;
+    transform: translateY(0px);
+    transition: all 0.1s ease-in;
+}
+.move__bottom {
+    transform: translateY(55px);
+
 }
 .sidebar__exp :hover{
     background-color: var(--light-navy);
