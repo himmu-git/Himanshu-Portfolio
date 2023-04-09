@@ -22,7 +22,7 @@ function init() {
 
         main.style.display = 'block';
         setTimeout(()=>(main.style.opacity = 1),50)
-    }, 1500)
+    }, 200)
 }
 init();
 hamburgerIcon.addEventListener('click', (event) => {
@@ -51,13 +51,15 @@ experienceSection.addEventListener('click', (event) => {
 
     if (event.target.id == 'jugnoo') {
         slider.classList.add('move__bottom')
-        // infoedge.classList.remove('active')
+        infoedge.classList.remove('active');
+        jugnoo.classList.add('active')
         jugnooDetails.style.display = 'block';
         infoedgeDetails.style.display = 'none';
     }
     else if (event.target.id == 'infoedge') {
         slider.classList.remove('move__bottom')
-        // infoedge.classList.add('active')
+        infoedge.classList.add('active')
+        jugnoo.classList.remove('active');
         infoedgeDetails.style.display = 'block';
         jugnooDetails.style.display = 'none';
     }

@@ -752,5 +752,8 @@ html{
         .footer__mention{
             font-size: 11px;
         }
+        .slider {
+            display: none;
+        }
 
     }
