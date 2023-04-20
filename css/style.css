@@ -526,6 +526,9 @@ html{
 }
 .project__img{
     width: 100%;
+    max-width: 340px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
  a, a:hover, a:focus, a:active {
       text-decoration: none;
@@ -787,9 +790,9 @@ html{
         flex-direction: column;
         }
         .about__img{
-        width: 80vw;
-        aspect-ratio: 1/1;
-        margin: 2rem 0;
+            width: 80vw;
+            aspect-ratio: 1/1;
+            margin: 2rem 0;
         }
         .footer__mention{
             font-size: 11px;
