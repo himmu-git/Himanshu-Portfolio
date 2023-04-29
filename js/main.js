@@ -42,7 +42,7 @@ closeBtn.addEventListener('click', (event) => {
             element.style.filter = "blur(0px)"
             sidebarDisplay.style.display = "none";
             sidebarMenu.style.display = "none"
-        }, 750)
+        }, 350)
     })
 })
 
