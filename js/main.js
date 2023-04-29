@@ -22,7 +22,7 @@ function init() {
 
         main.style.display = 'block';
         setTimeout(()=>(main.style.opacity = 1),50)
-    }, 200)
+    }, 0)
 }
 init();
 hamburgerIcon.addEventListener('click', (event) => {

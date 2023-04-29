@@ -102,8 +102,8 @@ body{
 
 .main {
     width: 100%;
-    opacity: 0;
-    display: none;
+    opacity: 1;
+    display: block;
     transition: opacity 1s ease-in;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
