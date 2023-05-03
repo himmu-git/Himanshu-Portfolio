@@ -148,6 +148,7 @@ body{
     margin-left :20px;
 }
 .logo__icon{
+    font-family : "SF-Mono";
     grid-column: 1 / span 4;
     padding: 0 1rem;
     justify-self: start;
