@@ -132,7 +132,7 @@ body{
     transition: var(--transition);
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(12,1fr);
     /* grid-template-rows: 4rem; */
     font-family: var(--font-mono);
     grid-gap: 1rem;
@@ -140,12 +140,15 @@ body{
     justify-items:  center;
 }
 .navbar >li:nth-child(1){
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     padding: 0 1rem;
     justify-self: start;
     align-self: center; 
     color : var(--green) !important;
     margin-left :20px;
+}
+.navbar >li:nth-child(6) {
+    grid-column: span 2
 }
 .logo__icon{
     font-family : "SF-Mono";
