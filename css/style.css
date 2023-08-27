@@ -319,7 +319,7 @@ body{
     margin: 0;
     font-size: clamp(40px, 8vw, 80px);
 }
-.hero__section__text > h2{
+.hero__section__text  span{
     color: var(--light-slate);
     font-weight: 600;
 }
