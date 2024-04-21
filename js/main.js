@@ -6,7 +6,7 @@ const hamburgerIcon = document.getElementById('hamburger');
 const sidebarDisplay = document.getElementById('sidebar');
 const closeBtn = document.getElementById('close-menu');
 const blurClass = document.querySelectorAll('.blur-class');
-const experienceSection = document.getElementById('experience');
+const experienceSection = document.getElementById('experience_tab');
 const jugnooDetails = document.getElementById('jugnoo-details');
 const infoedgeDetails = document.getElementById('infoedge-details');
 const jugnoo = document.getElementById('jugnoo');
@@ -21,10 +21,10 @@ function init() {
         loader.style.display = 'none';
 
         main.style.display = 'block';
-        setTimeout(()=>(main.style.opacity = 1),50)
+        setTimeout(() => (main.style.opacity = 1), 50)
     }, 0)
 }
-init();
+// init();
 hamburgerIcon.addEventListener('click', (event) => {
     sidebarDisplay.style.display = "flex";
     sidebarMenu.style.display = "flex"
@@ -47,7 +47,6 @@ closeBtn.addEventListener('click', (event) => {
 })
 
 experienceSection.addEventListener('click', (event) => {
-    console.log(event)
 
     if (event.target.id == 'jugnoo') {
         slider.classList.add('move__bottom')
@@ -65,7 +64,7 @@ experienceSection.addEventListener('click', (event) => {
     }
 })
 
-const words = ["I love to build Web Apps", "I'm a Software Engineer", "I'm a Hobbyist Photographer"]
+const words = ["I love to build Web Apps", "I'm a Senior Software Engineer"]
 let i = 0;
 let counter;
 function typeNow() {

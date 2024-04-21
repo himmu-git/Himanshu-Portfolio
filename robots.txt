@@ -2,4 +2,4 @@ robots.txt
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://www.yadavhimanshu.com/sitemap.xml
+Sitemap: https://www.ihimanshu.in/sitemap.xml

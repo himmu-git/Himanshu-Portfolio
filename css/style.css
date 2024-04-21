@@ -363,6 +363,7 @@ html{
 .about__me{
     display: flex;
     padding: 1rem 1rem 1rem 0rem;
+    gap : 2rem;
     color: var(--light-slate)
 }
 .about__img{
@@ -532,10 +533,10 @@ html{
     padding: 1.4rem;
     box-shadow:  0 10px 30px -15px var(--navy-shadow);
     z-index: 2;
-    position: relative;
+    /* position: relative; */
     top: 10%;
-    right: 17%;
-    width: 40vw;
+    left: -2%;
+    width: 45vw;
     cursor: pointer;
 }
 .project__description:hover{
@@ -555,10 +556,11 @@ html{
 .list__stack{
     list-style: none;
     display: flex;
-    padding: 1rem 0;
-    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
-    max-width: 30vw;
+    /* max-width: 30vw; */
     font-family: var(--font-mono);
 }
 .project__img{
@@ -824,6 +826,7 @@ html{
             margin: 0;
         }
         .about__me{
+            gap: 0.5rem;
         flex-direction: column;
         }
         .about__img{
@@ -836,6 +839,9 @@ html{
         }
         .slider {
             display: none;
+        }
+        .list__stack{ 
+            gap : 0.5rem
         }
 
     }
