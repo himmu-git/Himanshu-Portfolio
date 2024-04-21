@@ -3,3 +3,8 @@
     to = "https://www.ihimanshu.in/"
     status = 301
     force = true
+[[redirects]]
+    from = "https://ihimanshu.in/*"
+    to = "https://www.ihimanshu.in/"
+    status = 301
+    force = true
