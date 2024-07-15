@@ -64,8 +64,8 @@ experienceSection.addEventListener('click', (event) => {
     }
 })
 
-const words = ["I love to build Web Apps", "I'm a Senior Software Engineer"]
-let i = 0;
+const words = ["I love to build Web Apps", "I'm a Lead Engineer"]
+let i = 0;  
 let counter;
 function typeNow() {
     let word = words[i].split("");
