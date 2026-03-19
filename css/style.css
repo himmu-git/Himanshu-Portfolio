@@ -488,7 +488,54 @@ html{
 }
 .move__bottom {
     transform: translateY(55px);
+}
 
+.achievements__grid {
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+.achievements__column {
+    flex: 1;
+    min-width: 240px;
+}
+.achievements__subtitle {
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
+    color: var(--lightest-slate);
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.05em;
+}
+.achievements__list {
+    list-style: none;
+    padding: 0;
+}
+.achievements__list li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    padding-left: 20px;
+    position: relative;
+}
+.achievements__list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-size: var(--fz-sm);
+    line-height: 12px;
+    top: 2px;
+}
+.achievements__issuer {
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    margin-bottom: 0.2rem;
+}
+.achievements__name {
+    font-family: var(--font-mono);
+    font-size: var(--fz-xs);
+    color: var(--light-slate);
 }
 .sidebar__exp :hover{
     background-color: var(--light-navy);

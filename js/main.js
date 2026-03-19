@@ -7,11 +7,10 @@ const sidebarDisplay = document.getElementById('sidebar');
 const closeBtn = document.getElementById('close-menu');
 const blurClass = document.querySelectorAll('.blur-class');
 const experienceSection = document.getElementById('experience_tab');
-const jugnooDetails = document.getElementById('jugnoo-details');
-const infoedgeDetails = document.getElementById('infoedge-details');
-const jugnoo = document.getElementById('jugnoo');
-const infoedge = document.getElementById('infoedge');
 const slider = document.querySelector('.slider');
+const expTabs = ['oracle', 'infoedge', 'jugnoo'];
+const expTabEls = expTabs.map(id => document.getElementById(id));
+const expDetailEls = expTabs.map(id => document.getElementById(id + '-details'));
 //Hide Loader 
 function init() {
     setTimeout(() => {
@@ -47,24 +46,17 @@ closeBtn.addEventListener('click', (event) => {
 })
 
 experienceSection.addEventListener('click', (event) => {
-
-    if (event.target.id == 'jugnoo') {
-        slider.classList.add('move__bottom')
-        infoedge.classList.remove('active');
-        jugnoo.classList.add('active')
-        jugnooDetails.style.display = 'block';
-        infoedgeDetails.style.display = 'none';
-    }
-    else if (event.target.id == 'infoedge') {
-        slider.classList.remove('move__bottom')
-        infoedge.classList.add('active')
-        jugnoo.classList.remove('active');
-        infoedgeDetails.style.display = 'block';
-        jugnooDetails.style.display = 'none';
+    const idx = expTabEls.findIndex(tab => tab && tab.id === event.target.id);
+    if (idx !== -1) {
+        expTabEls.forEach(t => t && t.classList.remove('active'));
+        expDetailEls.forEach(d => d && (d.style.display = 'none'));
+        expTabEls[idx].classList.add('active');
+        expDetailEls[idx].style.display = 'block';
+        slider.style.transform = `translateY(${idx * 55}px)`;
     }
 })
 
-const words = ["I love to build Web Apps", "I'm a Lead Engineer"]
+const words = ["I love to build Web Apps", "I'm an SMTS @ Oracle OCI"]
 let i = 0;  
 let counter;
 function typeNow() {
