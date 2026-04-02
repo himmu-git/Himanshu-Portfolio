@@ -1,7 +1,9 @@
 /* @import "./variable.css"; Using a string */
 @font-face {
     font-family: "SF Mono";
-    src: url(../assets/font/FontsFree-Net-SFMono-Regular.ttf) format("truetype");
+    src: url(../assets/font/FontsFree-Net-SFMono-Regular.woff2) format("woff2"),
+         url(../assets/font/FontsFree-Net-SFMono-Regular.ttf) format("truetype");
+    font-display: swap;
   }
   :root {
       --dark-navy: #020c1b;
@@ -61,44 +63,8 @@ body{
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    animation: gradient 15s ease infinite;
 }
-/* Loader */
-#loader{
-    min-height: 100vh;
-    min-width: 100%;
-    background-color: var(--navy);
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
-}
-.loader{
-    height: 2.5rem;
-    display: flex;
-    gap : 0.2rem;
-    z-index: 1000;
-}
-.circle{
-    background-color: var(--green);
-    height: 0rem;
-    width: 0rem;
-    border-radius: 50%;
-    animation : bounce 1s infinite alternate;
 
-}
-.circle:nth-child(2){
-    background-color: var(--blue);
-    animation-delay: 0.3s;
-
-}
-.circle:nth-child(3){
-    background-color: var(--pink);
-    animation-delay: 0.6s;
-}
 #dynamic-text {
     background: #64FFDA;
     background: repeating-linear-gradient(to right, #64FFDA 0%, #CCD6F6 50%, #495670 50%, #8892B0 0%);
@@ -151,43 +117,21 @@ body{
     grid-column: span 2
 }
 .logo__icon{
-    font-family : "SF-Mono";
     grid-column: 1 / span 4;
     padding: 0 1rem;
     justify-self: start;
-    align-self: center; 
-    color : var(--green) !important;
-    display : flex;
+    align-self: center;
+    display: flex;
     justify-content: center;
-    align-items : center;
-    width: 42px;
-    height: 42px;
-    background : var(--navy);
-    border : 4px solid var(--green);
-    border-radius: 0px 10px 0 10px;
-    cursor : pointer;
-    animation: 1.5s infinite alternate yellow;
-    -webkit-box-shadow:0px 0px 15px 5px rgba(100,255,219,1);
-    -moz-box-shadow: 0px 0px 15px 5px rgba(100,255,219,1);
-    box-shadow: 0px 0px 15px 5px rgba(100,255,219,1);
+    align-items: center;
+    cursor: pointer;
 }
-@keyframes yellow {
-    0%, 100% {
-      box-shadow: 1px 0px 19px 4px rgba(100,255,219,0.92), inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
-  
-    50% {
-      box-shadow: 0px 0px 0px 0px rgba(255, 245, 3, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
-.logo__icon:hover {
-    /* border : 10px solid var(--green); */
-    -webkit-box-shadow:0px 0px 12px 2px rgba(100,255,219,0.92);
-    -moz-box-shadow: 0px 0px 12px 2px rgba(100,255,219,0.92);
-    box-shadow: 0px 0px 12px 2px rgba(100,255,219,0.92);
-
+.logo__icon svg {
+    filter: drop-shadow(0px 0px 6px rgba(100,255,219,0.8));
+    transition: filter 0.2s ease-in-out;
 }
-.navbar__logo{
-    font-size: 1.4rem;
-    color: var(--green);
-    font-family: 'Poppins',Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.logo__icon:hover svg {
+    filter: drop-shadow(0px 0px 10px rgba(100,255,219,1));
 }
 .navbar__numbering{
     margin: 0;
@@ -228,15 +172,7 @@ body{
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
     }
 }
-@keyframes bounce {
-    to {
-        width: 2rem;
-        height: 2rem;
-        transform: translate3d(0,-2rem,0);
-    }
-  
-    
-}
+
 .left{
     position: fixed;
     bottom: 0;

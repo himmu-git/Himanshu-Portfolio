@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="description"
         content="As a highly skilled Senior Software Engineer with a BTech degree in Electronics and Communication Engineering from IIIT Delhi, I possess nearly two years of experience as a Frontend Developer. My expertise includes Angular 8, ReactJs, and UI development, and I am constantly learning and exploring new technologies like ReactJs and NextJs. I am currently working with Info Edge, and I am passionate about web technologies. I am always on the lookout for new opportunities for growth and development. If you are searching for a talented Frontend Developer, please feel free to contact me." /> -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/svg+xml" href="./assets/img/icon.svg">
     <link rel="apple-touch-icon" href="./assets/img/icon.svg">
-    <link rel="preload" href="./assets/font/FontsFree-Net-SFMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/font/FontsFree-Net-SFMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="canonical" href="https://www.ihimanshu.in/">
 
     <!-- <title>Himanshu's Web Development: Showcasing My Skills and Experience</title> -->
@@ -25,10 +27,10 @@
     <meta name="author" content="Himanshu Yadav">    
     <meta property="og:title" content="Himanshu Yadav | SMTS at Oracle | Frontend Developer | React | Next.js">
     <meta property="og:site_name" content="Himanshu Yadav | Frontend Developer">
-    <meta property="og:url" content=https://www.ihimanshu.in/>
+    <meta property="og:url" content="https://www.ihimanshu.in/">
     <meta property="og:description" content="Senior Member of Technical Staff at Oracle AG OCI with 4+ years of experience as a Frontend Developer. Expertise in ReactJs, Next.js, React Server Components, TypeScript, Web Performance, and Core Web Vitals. IIIT Delhi alumni passionate about building high-performance web applications.">
-    <meta property="og:type" content="">
-    <meta property="og:image" content=https://www.ihimanshu.in/assets/img/newpic.png>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.ihimanshu.in/assets/img/newpic.png">
 </head>
 <!-- Google tag (gtag.js) -->
 <script defer src="https://www.googletagmanager.com/gtag/js?id=G-90RXD5QP9Z"></script>
@@ -73,8 +75,14 @@
         <header>
             <nav>
                 <ul class="navbar addn">
-                    <li class="logo__icon"><a title="Himanshu's portfolio's homepage" href="#hero__section" class="navbar__links"><span class="navbar__logo"
-                                style="">H</span></a></li>
+                    <li class="logo__icon"><a title="Himanshu's portfolio's homepage" href="#hero__section" class="navbar__links">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="42" height="42" aria-label="Himanshu logo">
+                            <g font-family="system-ui,Calibre-Medium,Calibre,sans-serif" font-size="50" font-weight="400" letter-spacing="4.16666603">
+                                <text transform="translate(32, 33)" fill="#64ffda" style="opacity:1"><tspan x="0.141666985" y="33">H</tspan></text>
+                            </g>
+                            <path stroke="#64ffda" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" d="M 50,5 L 11,27 L 11,72 L 50,95 L 89,73 L 89,28 z"/>
+                        </svg>
+                    </a></li>
                     <li><a title="About Himanshu" href="#about" class="navbar__links display__none"> <span class="navbar__numbering">01.</span>
                             About</a>
                     </li>
@@ -87,7 +95,7 @@
                                 class="navbar__numbering">04.</span>Achievements</a></li>
                     <li><a title="Contact Himanshu" href="#contact" class="navbar__links display__none"><span
                                 class="navbar__numbering">05.</span>Contact</a></li>
-                    <li><a title="Himanshu Resume" href="https://www.himanshuweb.dev/files/Himanshu_4_YOE.pdf"
+                    <li><a title="Himanshu Resume" href="https://drive.google.com/file/d/1ySnG7sVLK-M6RVSs49H7oXDcvJ8DVFLz/view?usp=sharing"
                             class="navbar__links navbar__resume display__none" target="_blank">Resume</a></li>
                     <li id="hamburger" class="menu">
                         <div class="menu__icon">
@@ -111,7 +119,7 @@
                 </li>
                 <li><a title="Contact Himanshu" href="#contact"><span class="sidebar__numbering">05.</span>Contact</a>
                 </li>
-                <li><a title="Himanshu Resume" href="https://www.himanshuweb.dev/files/Himanshu_4_YOE.pdf"
+                <li><a title="Himanshu Resume" href="https://drive.google.com/file/d/1ySnG7sVLK-M6RVSs49H7oXDcvJ8DVFLz/view?usp=sharing"
                         class=" navbar__resume green__color" target="_blank">Resume</a></li>
             </ul>
         </section>
@@ -161,7 +169,7 @@
                 </li>
                 <li class="styled__list_left">
                     <a title="Himanshu Instagram profile" href="https://www.instagram.com/himmu_51/" target="_blank" rel="noopener noreferrer">
-                        <img title="Instagram Icon" alt="Instagram Icon" class="side__icons" src="./assets/img/Instagram.svg" alt="Instagram">
+                        <img title="Instagram Icon" alt="Instagram Icon" width="20" height="20" class="side__icons" src="./assets/img/Instagram.svg">
                     </a>
                 </li>
             </ul>
@@ -206,7 +214,7 @@
             <div class="about__heading">
                 <h2 id="about" class="">
                     <span class="numbered">01.</span>
-                    <span class="number__heading"> <label for="">Know About Himanshu</label></span>
+                    <span class="number__heading"> <span>Know About Himanshu</span></span>
                     <!-- <span class="hoz__line"></span> -->
                 </h2>
                 <div class="about__me">
@@ -234,7 +242,10 @@
                         </ul>
                     </div>
                     <div class="about__img">
-                        <img title="Himanshu's photo" width="300px" height="300px" loading="lazy" src="./assets/img/newpic.png" alt="Himanshu's picture">
+                        <picture>
+                            <source srcset="./assets/img/newpic.webp" type="image/webp">
+                            <img title="Himanshu's photo" width="300" height="300" loading="lazy" src="./assets/img/newpic.png" alt="Himanshu's picture">
+                        </picture>
                         <div class="something">
 
                         </div>
@@ -249,7 +260,7 @@
             <div class="about__heading">
                 <h2 id="experience" class="">
                     <span class="numbered">02.</span>
-                    <span class="number__heading"> <label for="">Know About Himanshu's Experience</label></span>
+                    <span class="number__heading"> <span>Know About Himanshu's Experience</span></span>
                 </h2>
                 <div class="about__me">
                     <div id="experience_tab" class="sidebar__exp">
@@ -328,13 +339,16 @@
             <div class="about__heading">
                 <h2 class="">
                     <span class="numbered">03.</span>
-                    <span class="number__heading"> <label for="">Know About Himanshu's Projects</label></span>
+                    <span class="number__heading"> <span>Know About Himanshu's Projects</span></span>
                     <!-- <span class="hoz__line"></span> -->
                 </h2>
                 <div class="about__me m-2">
                     <div class="about__me__info">
                         <a target="_blank" href="https://application-tracker-system.netlify.app/">
-                            <img alt="application tracking system screenshot" title="ATS page screenshot" loading="lazy" width="360px" height="202.5px" src="./assets/img/ats-page.png" class="project__img" alt="">
+                            <picture>
+                                <source srcset="./assets/img/ats-page.webp" type="image/webp">
+                                <img alt="application tracking system screenshot" title="ATS page screenshot" loading="lazy" width="360" height="203" src="./assets/img/ats-page.png" class="project__img">
+                            </picture>
                         </a>
                     </div>
                     <div >
@@ -363,7 +377,10 @@
                 </div>
                 <div class="about__me m-2 second__project">
                     <div class="about__me__info">
-                        <img alt="screenshot of movie app project" title="screenshot of movie app project" loading="lazy" width="360px" height="202.5px" src="./assets/img/movie-app.png" class="project__img" alt="">
+                        <picture>
+                            <source srcset="./assets/img/movie-app.webp" type="image/webp">
+                            <img alt="screenshot of movie app project" title="screenshot of movie app project" loading="lazy" width="360" height="203" src="./assets/img/movie-app.png" class="project__img">
+                        </picture>
                     </div>
                     <div class="position__project">
                         <div class="featured__project">Featured Project</div>
@@ -384,7 +401,10 @@
                 </div>
                 <div class="about__me m-2">
                     <div class="about__me__info">
-                        <img alt="stock predictor project image" title="stock predictor project image" loading="lazy" width="360px" height="202.5px" src="./assets/img/stock-predictor.png" class="project__img" alt="">
+                        <picture>
+                            <source srcset="./assets/img/stock-predictor.webp" type="image/webp">
+                            <img alt="stock predictor project image" title="stock predictor project image" loading="lazy" width="360" height="203" src="./assets/img/stock-predictor.png" class="project__img">
+                        </picture>
                     </div>
                     <div>
                         <div class="featured__project">Featured Project</div>
@@ -408,7 +428,7 @@
             <div class="about__heading">
                 <h2 class="">
                     <span class="numbered">04.</span>
-                    <span class="number__heading"> <label for="">Certifications &amp; Awards</label></span>
+                    <span class="number__heading"> <span>Certifications &amp; Awards</span></span>
                 </h2>
                 <div class="about__me">
                 <div class="achievements__grid">
@@ -458,7 +478,7 @@
             <div class="about__heading">
                 <h2 class="contact_header">
                     <span class="numbered">05.</span>
-                    <span class="contact__heading"> <label for="">Contact</label></span>
+                    <span class="contact__heading"> <span>Contact</span></span>
                     <div class="big__heading" style="color: var(--slate);">
                         Get In Touch
                     </div>
@@ -528,7 +548,7 @@
                         </li>
                         <li class="styled__list_left">
                             <a title="Himanshu Instagram Profile" href="https://www.instagram.com/himmu_51/" target="_blank" rel="noopener noreferrer">
-                                <img alt="Instagram Icon " title="Instagram Icon " class="side__icons" src="./assets/img/Instagram.svg" alt="Instagram">
+                                <img alt="Instagram Icon" title="Instagram Icon" width="20" height="20" class="side__icons" src="./assets/img/Instagram.svg">
                             </a>
                         </li>
                     </ul>
